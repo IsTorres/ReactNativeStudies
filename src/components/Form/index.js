@@ -5,10 +5,10 @@ export default function Form() {
     return (
         <View>
             <View>
-                <Text>Dale</Text>
-                <TextInput placeholder="Type here to translate!" />
-                <Text>Dale</Text>
-                <TextInput placeholder="Dale" />
+                <Text>Altura</Text>
+                <TextInput placeholder="Ex.: 1.75" keyboardType="numeric" />
+                <Text>Peso</Text>
+                <TextInput placeholder="Ex.: 70.5" keyboardType="numeric" />
             </View>
         </View>
     );
