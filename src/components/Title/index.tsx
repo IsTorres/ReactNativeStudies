@@ -1,10 +1,21 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function Title () {
+const Title = (props: { title: string }) => {
     return (
         <View>
-            <Text>IMC CALC</Text>
+            <Text style={style.title}>{props.title}</Text>
         </View>
     )
 }
+
+const style = StyleSheet.create({
+    title: {
+        fontSize: 20,
+        fontWeight: "bold",
+        textAlign: "center",
+        padding: 20,
+    }
+});
+
+export default Title;

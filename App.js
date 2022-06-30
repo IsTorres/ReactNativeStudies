@@ -1,13 +1,15 @@
-import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import Main from './src/components/Main';
-import Title from './src/components/Title';
+import { StyleSheet, View } from 'react-native';
+import Form from './src/components/Form';
+import Select from './src/components/Picker';
+import Sliderzinho from './src/components/Slider';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Title />
-      <Main />
+      <Form />
+      <Select />
+      <Sliderzinho />
     </View>
   );
 }
@@ -15,9 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '30px',
+    backgroundColor: '#e0e0e0',
+    marginTop: 50,
   },
 });
